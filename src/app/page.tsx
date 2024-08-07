@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import BackgroundText from "./components/BackgroundText";
 import NavBar from "./components/navbar/NavBar";
@@ -24,7 +24,7 @@ export default function Home() {
         <BlurContainer>
           <img src={profile_img.src}/>
           <p>Tenho 20 anos, estou atualmente cursando <span>Gestão da Tecnologia da Informação </span>
-          na Faculdade de Pará de Minas, fique a vontade para explorar minhas <span className="underline"><Link href='/habilidades'>habilidades</Link></span> e <span className="underline"><Link href='/habilidades'>projetos</Link></span> desenvolvidos 😎.</p>
+          na Faculdade de Pará de Minas, fique a vontade para explorar minhas <span className="underline"><Link href={'/habilidades'}>habilidades</Link></span> e <span className="underline"><Link href={'/habilidades'}>projetos</Link></span> desenvolvidos 😎.</p>
         </BlurContainer>
       </div>
     </main>

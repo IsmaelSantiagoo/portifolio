@@ -27,7 +27,7 @@ export default function NavBar() {
         {
             id: 0,
             name: 'INÍCIO',
-            route: 'inicio'
+            route: ''
         },
         {
             id: 1,
@@ -55,12 +55,11 @@ export default function NavBar() {
         <div className={style.NavBar} >
             <img className={style.Logo} src={dev_icon.src} alt='Logomarca'/>
             <ul>
-                {/* {
+                {
                     navlinks.map((e) => (
                         <li key={e.id}><Link key={e.id} href={`/${e.route}`}>{e.name}</Link></li>
                     ))
-                } */}
-                <Link href='/servicos'>Teste</Link>
+                }
             </ul>
             <img className={style.Profile} src={profile_img.src} alt='Imagem de perfil' onClick={displayTheme}/>
             <ThemeChanger display={showTheme?'flex':'none'}/>
