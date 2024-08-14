@@ -1,0 +1,10 @@
+.PageTitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+  
+.PageTitle > h1 {
+    font-size: 32px;
+    color: #fff;
+}

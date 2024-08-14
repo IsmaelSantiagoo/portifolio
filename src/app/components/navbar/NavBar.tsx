@@ -1,17 +1,10 @@
 import Link from 'next/link'
 import style from './NavBar.module.css'
 import ThemeChanger from '../theme-changer/ThemeChanger'
-import { useEffect, useState } from 'react'
-import dev_icon from '../../../../public/dev_icon.png'
+import { useState } from 'react'
+import dev_icon from './assets/dev_icon.png'
 import profile_img from '../../../../public/profile.png'
-
 export default function NavBar() {
-
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-
-    },[data])
 
     const [showTheme, setShowTheme] = useState(false)
 

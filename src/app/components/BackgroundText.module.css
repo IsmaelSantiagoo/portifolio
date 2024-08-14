@@ -1,21 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap');
 
-.BackgroundText {
-    font-size: 16em;
-    color: #fff;
-    opacity: 0.02;
-    font-family: "Anton", sans-serif;
-    font-style: normal;
-    text-align: center;
-    font-weight: 400;
+.Content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: -1;
 }
 
-.Content {
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.BackgroundText {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(1em, 1em + 13vw, 19em);
+    text-align: center;
     z-index: -1;
+}
+
+html[data-theme="light"] .BackgroundText {
+    opacity: 0.04;
+}
+
+html[data-theme="dark"] .BackgroundText {
+    opacity: 0.02;
 }

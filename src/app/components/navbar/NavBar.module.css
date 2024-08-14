@@ -27,7 +27,7 @@
 
 .NavBar ul li {
     color: var(--grey);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     transition: .3s ease-in-out;
     text-align: center;
@@ -38,4 +38,11 @@
 .NavBar ul li:hover{
     color: var(--orange);
     border-bottom: 1px solid var(--orange);
+}
+
+/* Responsividade */
+@media screen and (min-width: 428px) {
+    .NavBar ul {
+        display: none;
+    }
 }

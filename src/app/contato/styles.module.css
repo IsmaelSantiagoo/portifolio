@@ -1,0 +1,55 @@
+.contactContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contacts {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact p {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.contact img {
+    width: 50px;
+}
+
+html[data-theme="light"] .contact img {
+    filter: invert(1);
+}
+
+.emailMessage {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.emailMessage p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.line {
+    border: 5px solid var(--orange);
+    text-align: center;
+    border-width: 1px;
+    height: 250px;
+}

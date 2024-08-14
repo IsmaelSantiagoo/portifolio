@@ -16,52 +16,78 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+* {
+  transition: .3s ease-in-out;
+}
+
+/* barra de rolagem completa */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* polegar */
+*::-webkit-scrollbar-thumb {
+  background-color: #828282;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
+/* fundo da barra */
+*::-webkit-scrollbar-track {
+  background-color: #1D1D1D;
+  border-radius: 10px;
+}
+
+main {
+  height: 100vh;
+}
+
+/* Estilizando temas */
+html[data-theme="light"] body {
+  background-color: var(--ice);
+}
+
+html[data-theme="dark"] body {
   background-color: var(--bg);
 }
 
-.mainContainer {
-  position: absolute;
-  margin-top: 70px;
-  height: 87vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 5%;
-  padding: 2%;
-  flex-direction: column;
-  z-index: -1;
+/* Spans do Title */
+
+html[data-theme="light"] .span1 {
+  color: #000;
 }
 
-.title-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 5%;
-}
-
-.title-container p {
-  font-size: 1em;
-  font-weight: 400;
-  color: #fff;
-}
-
-.title-container span {
-  font-family: "Anton", sans-serif;
-  font-size: 4em;
-}
-
-.span1 {
-  color: #fff;
-}
-
-.span2 {
+html[data-theme="light"] .span2 {
   color: var(--orange);
 }
 
-hr {
-  width: 200px;
-  align-self: center;
-  margin-bottom: 10px;
-  border-color: var(--orange);
+html[data-theme="dark"] .span1 {
+  color: #fff;
+}
+
+html[data-theme="dark"] .span2 {
+  color: var(--orange);
+}
+
+/* Elementos p */
+html[data-theme="light"] p {
+  color: #000;
+}
+
+html[data-theme="dark"] p {
+  color: #fff;
+}
+
+/* Elemetos h1 */
+html[data-theme="dark"] h1 {
+  color: #fff;
+}
+
+html[data-theme="light"] h1 {
+  color: #000;
 }

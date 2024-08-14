@@ -1,3 +1,5 @@
+"use client"
+
 import style from './ThemeChanger.module.css'
 import { useState } from 'react'
 
@@ -9,8 +11,10 @@ export default function ThemeChanger(props:any) {
 
         if (themeName) {
             setThemeName(false)
+            document.documentElement.setAttribute('data-theme', 'dark')
         } else {
             setThemeName(true)
+            document.documentElement.setAttribute('data-theme', 'light')
         }
     }
 

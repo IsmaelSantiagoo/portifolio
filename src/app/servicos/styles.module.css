@@ -1,0 +1,33 @@
+.services {
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 350px;
+    height: 300px;
+}
+
+.service img {
+    width: 100px;
+}
+
+.service p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.line {
+    border: 5px solid var(--orange);
+    text-align: center;
+    border-width: 2px;
+    height: 250px;
+}
