@@ -9,15 +9,19 @@
     padding: 5%;
     gap: 5%;
     align-items: center;
+    z-index: -1;
 }
 
 .BlurContainer > img {
     width: 20%;
+    background-image: linear-gradient(45deg, var(--orange), var(--light-orange));
+    border-radius: 50%;
+    padding: 1px;
 }
 
 .BlurContainer p {
     text-align: justify;
-    font-size: 1.9em;
+    font-size: 1em;
     font-weight:200;
 }
 
@@ -42,12 +46,19 @@ html[data-theme="light"] .BlurContainer span {
 }
 
 /* responsividade */
-@media screen and (min-width: 428px) {
+@media screen and (max-width:528px) {
     .BlurContainer {
         flex-direction: column;
+        gap: 50px;
+        height: auto;
     }
 
     .BlurContainer > img {
-        width: 100%;
+        width: 50%;
+    }
+
+    .BlurContainer p {
+        text-align: center;
+        font-size: 24px;
     }
 }

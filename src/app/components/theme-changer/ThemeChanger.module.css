@@ -11,6 +11,12 @@
     align-items: center;
     gap: 35px;
     color: #fff;
+    background-color: #1d1d1d;
+}
+
+html[data-theme="light"] .Switcher {
+    background-color: #fff;
+    border-color: #ccc;
 }
 
 .Switch {

@@ -26,3 +26,10 @@ html[data-theme="light"] .BackgroundText {
 html[data-theme="dark"] .BackgroundText {
     opacity: 0.02;
 }
+
+/* responsividade */
+@media screen and (max-width:528px) {
+    .BackgroundText {
+        text-align: left;
+    }
+}

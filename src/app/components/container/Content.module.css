@@ -8,3 +8,10 @@
     gap: 100px;
     padding: 175px 2% 0px 2%;
 }
+
+@media screen and (max-width:528px) {
+    .Content {
+        padding-top: 90px;
+        gap: 20px;
+    }
+}

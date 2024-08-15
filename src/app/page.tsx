@@ -7,6 +7,7 @@ import Link from "next/link";
 import profile_img from '../../public/profile.png'
 import Content from "./components/container/Content";
 import Title from "./components/title/Title";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
 
@@ -29,6 +30,7 @@ export default function Home() {
           na Faculdade de Pará de Minas, fique a vontade para explorar minhas <span className="underline"><Link href={'/habilidades'}>habilidades</Link></span> e <span className="underline"><Link href={'/habilidades'}>projetos</Link></span> desenvolvidos 😎.</p>
         </BlurContainer>
       </Content>
+      <Footer/>
     </main>
   );
 }

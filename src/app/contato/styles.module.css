@@ -53,3 +53,36 @@ html[data-theme="light"] .contact img {
     border-width: 1px;
     height: 250px;
 }
+
+@media screen and (max-width:528px) {
+    .contactContainer {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        padding-top: 175px;
+    }
+
+    .contacts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+        height: 100px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .emailMessage {
+        width: 100%;
+    }
+
+    .emailMessage > input {
+        width: 100%;
+    }
+}

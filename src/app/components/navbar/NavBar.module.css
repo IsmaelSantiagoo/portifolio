@@ -41,7 +41,7 @@
 }
 
 /* Responsividade */
-@media screen and (min-width: 428px) {
+@media screen and (max-width:528px) {
     .NavBar ul {
         display: none;
     }
