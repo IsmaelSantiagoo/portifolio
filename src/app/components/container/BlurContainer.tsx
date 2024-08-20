@@ -1,3 +1,4 @@
+// impoortando estilização
 import style from './BlurContainer.module.css'
 
 export default function BlurContainer(props:any) {

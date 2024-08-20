@@ -1,10 +1,14 @@
 "use client"
 
+// importando componentes
 import Content from '../components/container/Content'
 import BackgroundText from "../components/BackgroundText";
 import NavBar from "../components/navbar/NavBar";
 import BlurContainer from '../components/container/BlurContainer';
 import PageTitle from '../components/title/PageTitle';
+import Footer from '../components/footer/Footer';
+
+// importando estilização
 import style from './styles.module.css';
 
 // assets
@@ -38,6 +42,7 @@ export default function inicio() {
                         </div>
                     </div>
                 </BlurContainer>
+                <Footer/>
             </Content>
         </main>
     )

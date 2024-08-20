@@ -1,7 +1,9 @@
+/* estilização - contacts */
 .contactContainer {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .contacts {
@@ -28,10 +30,7 @@
     width: 50px;
 }
 
-html[data-theme="light"] .contact img {
-    filter: invert(1);
-}
-
+/* estilização - email */
 .emailMessage {
     width: 50%;
     display: flex;
@@ -54,6 +53,13 @@ html[data-theme="light"] .contact img {
     height: 250px;
 }
 
+/* adaptação com temas */
+html[data-theme="light"] .contact img {
+    filter: invert(1);
+}
+
+
+/* responsividade */
 @media screen and (max-width:528px) {
     .contactContainer {
         flex-direction: column;

@@ -1,3 +1,4 @@
+/* estilização - Switcher */
 .Switcher {
     position: fixed;
     top: 80px;
@@ -12,11 +13,6 @@
     gap: 35px;
     color: #fff;
     background-color: #1d1d1d;
-}
-
-html[data-theme="light"] .Switcher {
-    background-color: #fff;
-    border-color: #ccc;
 }
 
 .Switch {
@@ -77,4 +73,24 @@ input:checked + .Slider:before {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+/* adaptação com temas */
+html[data-theme="light"] .Switcher {
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+/* Responsividade */
+@media screen and (max-width:528px) {
+    .Switcher {
+        width: 200px;
+        padding: 5px;
+        gap: 15px;
+    }
+
+    .Slider {
+        width: 60px;
+        height: 34px;
+    }
 }

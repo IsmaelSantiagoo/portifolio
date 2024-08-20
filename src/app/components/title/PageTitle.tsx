@@ -1,3 +1,4 @@
+// importando estilização
 import style from './PageTitle.module.css'
 
 export default function PageTitle(props:any) {

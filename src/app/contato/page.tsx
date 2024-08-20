@@ -1,19 +1,22 @@
 "use client"
 
+// importando componentes
 import Content from '../components/container/Content'
 import BackgroundText from "../components/BackgroundText";
 import NavBar from "../components/navbar/NavBar";
 import PageTitle from '../components/title/PageTitle';
 import BlurContainer from '../components/container/BlurContainer';
-import style from './styles.module.css';
 import Input from '../components/inputs/Input';
 import Btn from '../components/Btn/Btn';
+// importando estilização
+import style from './styles.module.css';
 
 // assets
 import githubIcon from '../assets/github.png'
 import linkedinIcon from '../assets/linkedin.png'
 import instagramIcon from '../assets/instagram.png'
 import whatsappIcon from '../assets/whatsapp.png'
+import Footer from '../components/footer/Footer';
 
 export default function inicio() {
 
@@ -23,7 +26,7 @@ export default function inicio() {
             <BackgroundText text="Desenvolvedor Web"/>
             <Content styles={{justifyContent: 'center', alignItems: 'center'}}>
                 <PageTitle styles={{height: '150px'}}>Entre em contato comigo</PageTitle>
-                <BlurContainer styles={{alignItems: 'center',justifyContent: 'center',height: '400px'}}>
+                <BlurContainer>
                     <div className={style.contactContainer}>
                         <div className={style.contacts}>
                             <div className={style.contact}>
@@ -52,6 +55,7 @@ export default function inicio() {
                         </div>
                     </div>
                 </BlurContainer>
+                <Footer/>
             </Content>
         </>
     )

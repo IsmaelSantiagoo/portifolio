@@ -1,3 +1,4 @@
+// importando estilização
 import style from './Btn.module.css'
 
 export default function Btn(props:any) {

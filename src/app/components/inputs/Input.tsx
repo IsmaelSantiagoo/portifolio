@@ -1,5 +1,8 @@
-import style from './Input.module.css'
+// importando módulos
 import { useState } from 'react'
+
+// importando estilização
+import style from './Input.module.css'
 
 export default function Input(props:any) {
 

@@ -1,3 +1,4 @@
+// importando estilização
 import style from './BackgroundText.module.css'
 
 export default function BackgroundText(props:any) {

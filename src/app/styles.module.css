@@ -1,0 +1,61 @@
+/* Estilização - Container */
+.Container {
+    padding: 2%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+
+.Container > img {
+    width: 20%;
+    background-image: linear-gradient(45deg, var(--orange), var(--light-orange));
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.Container p {
+    text-align: justify;
+    font-size: 1.5em;
+    font-weight:200;
+}
+
+.Container span {
+    font-weight: 400;
+}
+
+/* Adaptação com temas - Container */
+html[data-theme="dark"] .Container p {
+    color: #fff;
+}
+
+html[data-theme="light"] .Container p {
+    color: #000;
+    font-weight: normal;
+}
+
+html[data-theme="dark"] .Container span {
+    color: var(--orange);
+}
+
+html[data-theme="light"] .Container span {
+    color: #fff;
+}
+
+/* Responsividade - Container */
+@media screen and (max-width:528px) {
+
+    .Container {
+        flex-direction: column;
+        gap: 50px;
+        height: auto;
+    }
+    
+    .Container > img {
+        width: 50%;
+    }
+
+    .Container p {
+        text-align: center;
+        font-size: 20px;
+    }
+}

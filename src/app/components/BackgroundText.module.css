@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap');
 
+/* estilização - Content */
 .Content {
     position: absolute;
     width: 100%;
@@ -10,6 +11,7 @@
     z-index: -1;
 }
 
+/* estilização - BackgroundText */
 .BackgroundText {
     font-family: "Anton", sans-serif;
     font-style: normal;
@@ -19,6 +21,7 @@
     z-index: -1;
 }
 
+/* adaptação com temas */
 html[data-theme="light"] .BackgroundText {
     opacity: 0.04;
 }
@@ -27,9 +30,9 @@ html[data-theme="dark"] .BackgroundText {
     opacity: 0.02;
 }
 
-/* responsividade */
+/* responsividade - BackgroundText*/
 @media screen and (max-width:528px) {
     .BackgroundText {
-        text-align: left;
+        display: none;
     }
 }

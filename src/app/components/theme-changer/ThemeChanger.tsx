@@ -1,7 +1,10 @@
 "use client"
 
-import style from './ThemeChanger.module.css'
+// importando módulos
 import { useState } from 'react'
+
+// importando estilização
+import style from './ThemeChanger.module.css'
 
 export default function ThemeChanger(props:any) {
 

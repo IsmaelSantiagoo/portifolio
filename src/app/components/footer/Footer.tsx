@@ -1,6 +1,7 @@
+// importando estilização
 import styles from './Footer.module.css'
 
-export default function Footer() {
+export default function Footer(props:any) {
 
     return (
         <footer className={styles.Footer}>
